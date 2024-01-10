@@ -12,7 +12,7 @@
             
             if (file_exists('Controllers/' . $url . '.php')) {
 
-                echo "Loading class: ". $url;
+                // echo "Loading class: ". $url;
 
                 $class_name = 'Controllers\\' . $url;
 

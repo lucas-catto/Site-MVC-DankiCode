@@ -2,10 +2,15 @@
 
     namespace Controllers;
 
-    class ContactController {
+    class ContactController extends Controller {
+
+        public function __construct () {
+
+            $this->view = new \Views\ContactView('contact');
+        }
         
         public function execute () {
-            echo 'Contact page been executed';
+            $this->view->render();
         }
     }
 ?>
