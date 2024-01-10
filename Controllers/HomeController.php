@@ -3,8 +3,12 @@
 
     class HomeController {
         
+        public function __construct () {
+            $this->view = new \Views\MainView('home');
+        }
+
         public function execute () {
-            echo 'Home';
+            $this->view->render(array('title'=>'Home'));
         }
     }
 ?>

@@ -6,11 +6,11 @@
 
         public function __construct () {
 
-            $this->view = new \Views\ContactView('contact');
+            $this->view = new \Views\MainView('contact');
         }
         
         public function execute () {
-            $this->view->render();
+            $this->view->render(array('title'=>'Contact'));
         }
     }
 ?>
