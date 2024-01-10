@@ -6,6 +6,10 @@
         private $file_name;
         private $header;
         private $footer;
+
+        const title = 'Project MVC';
+
+        public $menu_items = array('Home', 'About', 'Contact');
     
         public function __construct ($file_name, $header = 'header', $footer = 'footer') {
             

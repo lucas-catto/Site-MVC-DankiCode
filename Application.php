@@ -1,5 +1,8 @@
 <?php
 
+    define('INCLUDE_PATH',      'http://localhost/Site-MVC-DankiCode/');
+    define('INCLUDE_PATH_FULL', 'http://localhost/Site-MVC-DankiCode/Views/pages/');
+
     class Application {
         
         public function execute () {
